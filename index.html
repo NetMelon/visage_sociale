@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visage Sociale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <div id="header"><h2 style="color:white; padding:5px">Visage Social</h2></div>
+    <script id="entry-template" type="text/x-handlebars-template">    
+    <div class="row">
+    <div id="left" class="column">
+        <div class="circle">
+                <img class="photo" src="images/1.jpg">
+        </div>
+
+        {{#each links}}
+        <hr>
+        {{#each this}}
+        <a href="#">{{this}}</a>
+        <br>
+        {{/each}}
+        {{/each}}
+        
+        </div>
+    <div id="middle" class="column">
+        <div>
+                <h3>Live Feed</h3>
+                <hr>
+        </div>
+        <div class="posts">
+            {{#each posts}}
+            <div>
+                    <div class="photo-box">
+                            <div class="circle">
+                                    {{postPhoto}}
+                            </div>
+                    </div>
+                        <p class="post"><b>{{author}}</b>&nbsp;&nbsp;{{body}}</p>
+            </div>
+            <div>
+                    {{timestamp}} ago * 🗨️ <a href="#">Comment</a> * 👍 <a href="#">Like</a>
+                    <hr>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div id="right" class="column">
+        <b>Requests</b>
+        <br>
+        1 event invitation
+        <br>
+        1 friend suggested
+        <br>
+        5 group invitations
+        <br>
+        20 other requests
+        <hr>
+        <b>Suggestions</b>
+        <br>
+        <div>        
+                <div class="circle columns">
+                    <img class="photo" src="images/2.jpg">
+                </div>
+                <div class="columns">
+    Jean Pierre Mertier
+    <br>
+    64 mutual friends
+    <br>
+    ➕ <a href="#">Add as a friend</a>
+                </div>
+            </div>
+            <br>
+        <div>        
+            <div class="circle columns">
+                <img class="photo" src="images/3.jpg">
+            </div>
+            <div class="columns">
+Anna Louise Zagrev
+<br>
+64 mutual friends
+<br>
+➕ <a href="#">Add as a friend</a>
+            </div>
+        </div>
+        <br>
+        <b>Sponsored</b>
+
+        <b>Events</b>
+        🎃 Halloween Party
+        <br>
+        🎂 Elli Flint's birthday
+
+
+
+    </div>
+</div>
+    </script>
+
+    <script src="handlebars-v4.1.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

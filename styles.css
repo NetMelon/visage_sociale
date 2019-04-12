@@ -1,0 +1,89 @@
+/************************
+Basic structure
+************************/
+html {
+    height:100%
+}
+
+body{
+    background-color: grey;
+    height:100%
+}
+
+#header{
+    height:40px;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    background-color: darkgreen;
+}
+
+#entry-template{
+    height:100%
+}
+
+.row {
+clear:both;
+height:100%;
+}
+
+.column{
+    box-sizing:border-box;
+    padding:10px;
+    float:left;
+    background-color:white;
+    height:100%
+}
+
+#left{
+    width:25%;
+}
+
+#middle{
+    width:50%;
+    border-left: 2px solid grey;
+    height: 100%;
+}
+
+#right{
+    width:25%;
+    border-left: 2px solid grey;
+    height: 100%;
+}
+
+/************************
+Photos
+************************/
+.circle{
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f3f6f9;
+    border-radius: 50%;
+}
+
+.photo{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/************************
+Posts
+************************/
+
+.photo-box{
+    float:left;
+}
+
+.post{
+    padding-top:20px;
+}
+
+.posts{
+    overflow-y:scroll;
+    font-size: 12px;
+}
